@@ -44,7 +44,17 @@
     </style>
   </head>
   <body>
-    <audio src="favicon/bg.mp3" autoplay></audio>
+    <iframe
+      src="favicon/bg.mp3"
+      allow="autoplay"
+      style="display: none"
+      id="iframeAudio"
+    >
+    </iframe>
+    <audio autoplay loop id="playAudio">
+      <source src="favicon/bg.mp3" />
+    </audio>
+    <!-- <audio src="favicon/bg.mp3" autoplay></audio> -->
     <h1>&#127875; My Pumpkin&#127875;</h1>
     <p>
       Thank you for being a part of my life. I have never seen any person like
@@ -71,4 +81,13 @@
     <p>Virtual Hug coming &#129730;&#129730;&#129730;</p>
     <h4>P.S.:&#10084;I LOVE YOU &#10084;</h4>
   </body>
+  <script>
+    var isChrome =
+      /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    if (!isChrome) {
+      document.getElementById("iframeAudio").remove();
+    } else {
+      document.getElementById("playAudio").remove(); // just to make sure that it will not have 2x audio in the background
+    }
+  </script>
 </html>
