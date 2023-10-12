@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises</title>
+    <link rel="icon" href="favicon/heart.ico" type="image/x-icon" />
+    <style>
+      body {
+        text-align: center;
+        background: #12c2e9;
+        background: -webkit-linear-gradient(
+          to right,
+          #f64f59,
+          #c471ed,
+          #12c2e9
+        );
+        background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+        color: #cdfad5;
+      }
+      h1 {
+        font-size: 400%;
+        margin-top: 0%;
+      }
+      h3 {
+        font-size: x-large;
+      }
+      p {
+        margin: 0%;
+        width: 75%;
+        position: relative;
+        left: 12.5%;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe
+      src="favicon/bg2.mp3"
+      allow="autoplay"
+      style="display: none"
+      id="iframeAudio"
+    >
+    </iframe>
+    <audio autoplay loop id="playAudio">
+      <source src="favicon/bg2.mp3" />
+    </audio>
+    <h1>&#127875;Promises For My Pumpkin&#127875;</h1>
+    <p>
+      I promise I will take care of me and you. I promise I won't speak anything
+      negative. I won't speak about death. I will live a long life. You are my
+      only love. I won't love anyother people other than you. I will take care
+      of you even it worth my life. I won't hurt me. I promise I will never be a
+      barrier to your dreams. I will be a romatic as you like. I promise you
+      that I won't make you sad. You will be happy for your life. I promise that
+      I will get a good job. I will be there everytime you face trouble. Don't
+      worry about the future. I will be there for you till death separate us.
+      Surely, I will give your 2 years enjoyment period with me. I won't be a
+      barrier.
+    </p>
+    <h3>Be happy and enjoy your life, but this time with me.</h3>
+    <h3>But I will always be there to save my pumpkin&#127875;.</h3>
+    <h1>&#127875;Promises I need from My Pumpkin&#127875;</h1>
+    <p>
+      Always be with me and understand me. Always force me to do enjoyment
+      things with you. I want to be crazy with you. Help me with it.
+    </p>
+    <script>
+      var isChrome =
+        /Chrome/.test(navigator.userAgent) &&
+        /Google Inc/.test(navigator.vendor);
+      if (!isChrome) {
+        document.getElementById("iframeAudio").remove();
+      } else {
+        document.getElementById("playAudio").remove(); // just to make sure that it will not have 2x audio in the background
+      }
+    </script>
+  </body>
+</html>
