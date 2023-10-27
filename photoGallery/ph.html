@@ -9,6 +9,16 @@
   </head>
 
   <body style="background-color: #e9606c">
+    <iframe
+      src="audio/bg.mp3"
+      allow="autoplay"
+      style="display: none"
+      id="iframeAudio"
+    >
+    </iframe>
+    <audio autoplay loop id="playAudio">
+      <source src="audio/bg.mp3" />
+    </audio>
     <!-- partial:index.partial.html -->
     <div class="Container">
       <!-- last card -->
@@ -70,6 +80,16 @@
       </div>
     </div>
     <!-- partial -->
+    <script>
+      var isChrome =
+        /Chrome/.test(navigator.userAgent) &&
+        /Google Inc/.test(navigator.vendor);
+      if (!isChrome) {
+        document.getElementById("iframeAudio").remove();
+      } else {
+        document.getElementById("playAudio").remove(); // just to make sure that it will not have 2x audio in the background
+      }
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>
