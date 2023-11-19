@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reminder</title>
     <link rel="icon" href="favicon/heart.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/pl.css" />
     <style>
       body {
         text-align: center;
@@ -46,44 +47,47 @@
     </style>
   </head>
   <body>
-    <iframe
-      src="audio/bg.mp3"
-      allow="autoplay"
-      style="display: none"
-      id="iframeAudio"
-    >
-    </iframe>
-    <audio autoplay loop id="playAudio">
-      <source src="audio/bg.mp3" />
-    </audio>
-    <h1>&#127875; My Pumpkin&#127875;</h1>
-    <p>
-      Thank you for being a part of my life. I have never seen any person like
-      you in my life before. As I always say, you are always special to me. I
-      have seen no one cry for other person's feelings. But I can see and feel
-      that caring and love in you. Whatever I wanted all these years is just
-      love and care. And now I am getting it from you. You are my love and
-      motivation. You are my angel sent from heaven. And I am never gonna leave
-      you, no matter what may happen. Don't feel low about yourself. You are
-      always great in your own way. I love you when I can see your true colors.
-      No need to hide your true colors from me. You are always my
-      pumpkin&#127875;. Whatever you feel even shit or great, let's feel it
-      together. I don't want to be part of your happiness, I want to support you
-      during the time you face your storms. Let me be a part of it. You may have
-      faced many problems in your life alone, but from now you are not alone.
-      Let's face it together, with holding our hands and never leaving it. Don't
-      feel anything to share your feelings with me. I will help you even it
-      worth my life. I have never felt this comfortable with anyone other than
-      you. Eventhough, everyone see you weird, you are always normal to me. I
-      love every form of you. Just be transparent about your sufferings to me. I
-      will be with you till death separate us.
-    </p>
-    <h3>
-      This ring is just to remind you that, I am not there for you but
-      <span>always with you.</span>
-    </h3>
-    <p>Virtual Hug coming &#129730;&#129730;&#129730;</p>
-    <h4 onclick="next()">P.S.:&#10084;I LOVE YOU &#10084;</h4>
+    <div id="lock"><h1>Rotate ur device</h1></div>
+    <div id="container">
+      <iframe
+        src="audio/bg.mp3"
+        allow="autoplay"
+        style="display: none"
+        id="iframeAudio"
+      >
+      </iframe>
+      <audio autoplay loop id="playAudio">
+        <source src="audio/bg.mp3" />
+      </audio>
+      <h1>&#127875; My Pumpkin&#127875;</h1>
+      <p>
+        Thank you for being a part of my life. I have never seen any person like
+        you in my life before. As I always say, you are always special to me. I
+        have seen no one cry for other person's feelings. But I can see and feel
+        that caring and love in you. Whatever I wanted all these years is just
+        love and care. And now I am getting it from you. You are my love and
+        motivation. You are my angel sent from heaven. And I am never gonna
+        leave you, no matter what may happen. Don't feel low about yourself. You
+        are always great in your own way. I love you when I can see your true
+        colors. No need to hide your true colors from me. You are always my
+        pumpkin&#127875;. Whatever you feel even shit or great, let's feel it
+        together. I don't want to be part of your happiness, I want to support
+        you during the time you face your storms. Let me be a part of it. You
+        may have faced many problems in your life alone, but from now you are
+        not alone. Let's face it together, with holding our hands and never
+        leaving it. Don't feel anything to share your feelings with me. I will
+        help you even it worth my life. I have never felt this comfortable with
+        anyone other than you. Eventhough, everyone see you weird, you are
+        always normal to me. I love every form of you. Just be transparent about
+        your sufferings to me. I will be with you till death separate us.
+      </p>
+      <h3>
+        This ring is just to remind you that, I am not there for you but
+        <span>always with you.</span>
+      </h3>
+      <p>Virtual Hug coming &#129730;&#129730;&#129730;</p>
+      <h4 onclick="next()">P.S.:&#10084;I LOVE YOU &#10084;</h4>
+    </div>
     <script>
       var isChrome =
         /Chrome/.test(navigator.userAgent) &&

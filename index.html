@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
     <link rel="icon" href="favicon/quiz.ico" />
+    <link rel="stylesheet" href="css/pl.css" />
     <style>
       body {
         text-align: center;
@@ -70,31 +71,34 @@
     </style>
   </head>
   <body>
-    <h1>Answer The Following</h1>
-    <table>
-      <tr>
-        <td>
-          <label for="my">My nick name[Full lowerletter]:</label>
-        </td>
-        <td>
-          <input type="password" id="my" />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label for="ur">Your nick name[Full lowerletter]:</label>
-        </td>
-        <td>
-          <input type="password" id="ur" />
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <button id="btn">Enter</button>
-        </td>
-      </tr>
-    </table>
-    <h4>(Use headphones for Better Experience)</h4>
+    <div id="lock"><h1>Rotate your Device</h1></div>
+    <div id="container">
+      <h1>Answer The Following</h1>
+      <table>
+        <tr>
+          <td>
+            <label for="my">My nick name[Full lowerletter]:</label>
+          </td>
+          <td>
+            <input type="password" id="my" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="ur">Your nick name[Full lowerletter]:</label>
+          </td>
+          <td>
+            <input type="password" id="ur" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button id="btn">Enter</button>
+          </td>
+        </tr>
+      </table>
+      <h4>(Use headphones for Better Experience)</h4>
+    </div>
     <script>
       document.getElementById("btn").addEventListener("click", function () {
         var my = document.getElementById("my").value;
